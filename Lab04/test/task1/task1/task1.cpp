@@ -7,7 +7,7 @@ int Myroot(double, double, double, double&, double&);
 void valuesRoot()
 {
 	double a, b, c;
-	cout << "Plese, enter values of a,b,c for quadratic equation (ax^2+bx+c)!\n";
+	cout << "Please, enter values of a,b,c for quadratic equation (ax^2+bx+c)!\n";
 	cin >> a >> b >> c;
 
 	double x1, x2;
