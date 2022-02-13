@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    /*ofstream outf("SomeText.txt");
+    ofstream outf("SomeText.txt");
 
     if (!outf)
     {
@@ -26,7 +26,7 @@ int main()
 		string strInput;
 		getline(inf, strInput);
 		cout << strInput << endl;
-	}*/
+	}
 
     const int N = 128;
     char text[N];
