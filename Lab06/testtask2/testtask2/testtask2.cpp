@@ -47,7 +47,7 @@ void SortArray(const int size, int* a)
 	}
 }
 
-bool WriteToFile(const int size, int* arr, std::string nameFile = "ArrFile.txt") 
+bool WriteToFile(const int size, int* arr, string nameFile = "ArrFile.txt") 
 {
 	ofstream out(nameFile);
 	if (!out)
@@ -58,7 +58,7 @@ bool WriteToFile(const int size, int* arr, std::string nameFile = "ArrFile.txt")
 	if (out.is_open())
 	{
 		for (int i = 0; i < size; i++) {
-			out << arr[i] << std::endl;
+			out << arr[i] << endl;
 		}
 	}
 	out.close();
