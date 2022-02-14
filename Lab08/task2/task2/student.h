@@ -2,9 +2,14 @@
 #include <string>		
 using namespace std;
 
-class Students
+class Student
 	{
 	public:
+		Student(string, string)
+		{
+			/*string name = name;
+			string last_name = last_name;*/
+		};
 
 		void set_name(string student_name);
 		string get_name();
