@@ -61,6 +61,16 @@ public:
 		set_m_seconds(seconds);
 	}
 
+	Time& addTime(Time t1, Time t2)
+	{
+		int hours = t1.m_hours + t2.m_hours;
+		int minutes = t1.m_minutes + t2.m_minutes;
+		int seconds = t1.m_seconds + t2.m_seconds;
+		Time t(hours, minutes, seconds);
+		//timeCorrection();
+		return t;
+	}
+
 private:
 	int m_hours;
 	int m_minutes;
