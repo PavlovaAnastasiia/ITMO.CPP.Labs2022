@@ -7,7 +7,7 @@ using namespace std;
 //int main() //task2&3
 //{
 //	Student* student02 = new Student; //task3
-//	//Students student01;
+//	//Student student01;
 //	string name;
 //	string last_name;
 //

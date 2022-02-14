@@ -5,11 +5,9 @@ using namespace std;
 class Student
 	{
 	public:
-		Student(string, string)
-		{
-			/*string name = name;
-			string last_name = last_name;*/
-		};
+		void save(); //task5
+		~Student();
+		Student(string, string){};
 
 		void set_name(string student_name);
 		string get_name();

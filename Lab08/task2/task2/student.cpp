@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "student.h"
+#include <fstream>
 
 void Student::set_name(string student_name)
 {
@@ -44,4 +45,25 @@ Student::Student(string name, string last_name)
 	Student::set_name(name);
 	Student::set_last_name(last_name);
 }
+
+Student::~Student() //task5
+{
+	Student::save();
+}
+
+void Student::save()
+{
+	ofstream fout("students.txt", ios::app);
+	fout << Student::get_name() << " "
+		<< Student::get_last_name() << " ";
+	for (int i = 0; i < 5; ++i) {
+		fout << Student::scores[i] << " ";
+	}
+	fout << endl;
+	fout.close();
+}
+
+
+
+
 
