@@ -3,6 +3,15 @@
 
 using namespace std;
 
+class ifTriangleExist
+{
+public:
+	ifTriangleExist() : message("Triangle does not exist! Please, try again!") {};
+	void printMessage() const { cout << message << endl; }
+private:
+	string message;
+};
+
 class Triangle
 {
 private:
@@ -51,6 +60,9 @@ public:
 
 	double findSquare(Triangle t)
 	{
+		if (a + b < c || a + c < b || c + b < a)
+			throw ifTriangleExist();
+
 		//Triangle t(a, b, c);
 		double p = (a + b + c) / 2;
 		double s;
