@@ -13,5 +13,6 @@ public:
 	Dot();
 	Dot(double x, double y);
 	double distanceTo(Dot* point);
+	double distanceToP(Dot point);
 };
 

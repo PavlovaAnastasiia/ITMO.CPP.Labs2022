@@ -2,6 +2,7 @@
 #include "Triangle.h"
 #include "Dot.h"
 
+//composition
 double Triangle::findSide()
 {
 	ab = d1->distanceTo(d2);
@@ -40,4 +41,28 @@ double Triangle::findSquare()
 //	Triangle::d3 = dot3;
 //}
 
+//aggregation
+double Triangle::findSide1()
+{
+	ab = dA.distanceToP(dB);
+	bc = dB.distanceToP(dC);
+	ca = dC.distanceToP(dA);
+
+	return ab, bc, ca;
+}
+double Triangle::findPerimetr1()
+{
+	findSide1();
+	double p = (ab + bc + ca);
+	p = (p * 100) / 100;
+	return p;
+}
+
+double Triangle::findSquare1()
+{
+	double p = findPerimetr1() / 2;
+	double s = sqrt(p * (p - ab) * (p - bc) * (p - ca));
+	s = (s * 100) / 100;
+	return s;
+}
 
