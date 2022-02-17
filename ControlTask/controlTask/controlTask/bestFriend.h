@@ -18,8 +18,13 @@ public:
 	{
 		return birth_date;
 	}
+	static Human* createBFriend(string name, string last_name, string phone, char status, string birth_date)
+	{
+		return new BestFriend(name, last_name, phone, status, birth_date);
+	}
 
 private:
 	string birth_date;
 };
+
 

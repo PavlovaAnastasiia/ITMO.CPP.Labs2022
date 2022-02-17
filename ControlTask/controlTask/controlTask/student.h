@@ -2,7 +2,7 @@
 #include "human.h"
 #include <iostream>
 
-class Student: public Human
+class Student : public Human
 {
 public:
 	Student();
@@ -20,10 +20,10 @@ public:
 	{
 		return Student::institution;
 	}
-	/*Human* createStudent(string name, string last_name, string phone, char status, string institution)
+	static Human* createStudent(string name, string last_name, string phone, char status, string institution)
 	{
-		return new Student(name, lastName, phone, status, institution);
-	}*/
+		return new Student(name, last_name, phone, status, institution);
+	}
 
 private:
 	string institution;

@@ -21,10 +21,9 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{bc1b42eb-e08b-4364-a905-6e480a2e174f}</ProjectGuid>
-    <RootNamespace>main</RootNamespace>
+    <ProjectGuid>{46711640-d898-45dc-ab54-3e02411d2c15}</ProjectGuid>
+    <RootNamespace>controlTask</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>ctrlTask</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
