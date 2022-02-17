@@ -25,6 +25,8 @@ public:
 		return new Student(name, last_name, phone, status, institution);
 	}
 
+	char getStatus() override;
+
 private:
 	string institution;
 };

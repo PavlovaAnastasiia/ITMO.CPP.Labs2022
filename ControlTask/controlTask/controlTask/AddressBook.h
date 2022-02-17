@@ -1,6 +1,7 @@
 #pragma once
 #include <string>
 #include <iostream>
+#include <fstream>
 #include <map>
 #include "student.h"
 #include "bestFriend.h"
@@ -49,6 +50,7 @@ public:
 			addHuman(BestFriend::createBFriend(name, last_name, phone, status, birth_date));
 		}
 	}
+	void saveBook();
 
 private:
 	map<string, Human*> book;

@@ -1,9 +1,8 @@
 #include <string>
 #include <sstream>
 #include <string>
-
-using namespace std;
-#pragma once 
+#pragma once
+using namespace std; 
 
 class Human
 {
@@ -13,6 +12,7 @@ public:
 	//void setHuman(string, string, string);
 	string getHuman();
 	string getFullName();
+	virtual char getStatus() = 0;
 
 private:
 	string name;
