@@ -4,8 +4,8 @@
 class BestFriend : public Human
 {
 public:
-	BestFriend(string name, string last_name, string phone, string birth_date) :
-		Human(name, last_name, phone)
+	BestFriend(string name, string last_name, string phone, char status, string birth_date) :
+		Human(name, last_name, phone, status)
 	{
 		set_birth_date(birth_date);
 	}

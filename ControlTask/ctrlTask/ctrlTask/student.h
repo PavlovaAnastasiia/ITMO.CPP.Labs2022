@@ -6,8 +6,8 @@ class Student: public Human
 {
 public:
 	Student();
-	Student(string name, string last_name, string phone, string institution) :
-		Human(name, last_name, phone)
+	Student(string name, string last_name, string phone, char status, string institution) :
+		Human(name, last_name, phone, status)
 	{
 		set_institution(institution);
 	}
@@ -20,6 +20,10 @@ public:
 	{
 		return Student::institution;
 	}
+	/*Human* createStudent(string name, string last_name, string phone, char status, string institution)
+	{
+		return new Student(name, lastName, phone, status, institution);
+	}*/
 
 private:
 	string institution;

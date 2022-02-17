@@ -8,7 +8,7 @@ class Human
 {
 public:
 	Human();
-	Human(string, string, string);
+	Human(string, string, string, char);
 	void setHuman(string, string, string);
 	string getHuman();
 	string getFullName();
