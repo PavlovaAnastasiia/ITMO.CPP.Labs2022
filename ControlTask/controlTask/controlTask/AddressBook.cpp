@@ -5,7 +5,7 @@
 
 unsigned int AddressBook::mainMenu()
 {
-	unsigned int flag = 0;
+	unsigned int flag;
 	cout << "Please, select an action:\n"
 		<< "\t1. Enter information about the person\n"
 		<< "\t2. Save information to directory\n" << endl;
@@ -42,13 +42,13 @@ void AddressBook::saveBook()
 {
 	std::ofstream foutB;
 	std::ofstream foutS;
-	foutB.open(pathF);
-	foutS.open(pathC);
-	if (!foutB.is_open())
+	foutB.open(pathB);
+	foutS.open(pathS);
+	if (!foutB)
 	{
 		cout << "Unable to open file";
 	}
-	else
+	if(foutB.is_open())
 	{
 		for (auto f : book)
 		{

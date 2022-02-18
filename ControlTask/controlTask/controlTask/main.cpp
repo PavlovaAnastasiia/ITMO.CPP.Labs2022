@@ -5,6 +5,6 @@
 int main()
 {
     AddressBook* address = new AddressBook;
-    address->AddressBook::mainMenu();
+    address->mainMenu();
     return 0;
 }

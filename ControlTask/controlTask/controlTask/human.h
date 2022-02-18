@@ -14,7 +14,7 @@ public:
 	string getFullName();
 	virtual char getStatus() = 0;
 
-private:
+protected:
 	string name;
 	string last_name;
 	string phone;

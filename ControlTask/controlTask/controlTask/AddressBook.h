@@ -20,6 +20,7 @@ private:
 class AddressBook
 {
 public:
+
 	unsigned int mainMenu();
 	void selectAction(unsigned int flag);
 
@@ -54,8 +55,7 @@ public:
 
 private:
 	map<string, Human*> book;
-	map<string, Human*>::iterator bookIter;
-	string pathF;
-	string pathC;
+	string pathB = "BestFriend.txt";
+	string pathS = "Student.txt";
 };
 
